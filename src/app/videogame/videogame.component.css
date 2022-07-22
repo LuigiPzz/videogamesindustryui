@@ -1,0 +1,57 @@
+ @import "../../assets/css/bootstrap.min.css";
+  @import "../../assets/fontawesome/css/all.min.css";
+   @import "../../assets/css/templatemo-style.css";
+   
+.tm-hero{
+    background-color: #f4f4f4;
+    }
+.tm-search-form{
+	margin:0px;
+	padding: 0px;	
+    transition-duration: 0.4s;
+}
+
+.tm-search-btn:hover{
+  background-color: #FF3146;
+}
+
+.tm-btn-big{
+	margin:0px;
+	padding: 0px
+}
+.border{
+  padding: 10px;
+}
+
+.fa {
+  margin-right: 10px;
+}
+table .btn{
+  margin: 2px;
+}
+
+.lp_btn_add{
+  background-color: #009999;
+  color: white;
+  padding: 8px 22px;
+  border: 0px;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  float: right
+}
+.lp_btn_add:hover{
+  background-color: #FF3146;
+}
+.container{
+	padding-top: 25px;
+	border: 0px
+}
+
+.td_centered{
+	text-align: center
+}
+thead{ background: #009999; color: white;text-align: center;  }
+span{ height: 100%; width: 100%}
+td{vertical-align: middle; border: 0px;}
+th{border: 0px;}

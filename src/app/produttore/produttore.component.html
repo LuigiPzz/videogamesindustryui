@@ -1,0 +1,26 @@
+<div class="container">
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Titolo</th>
+				<th>Action</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let produttore of produttore">
+				<td><span>{{produttore.nome}}</span></td>
+				<td class="td_centered">
+					<button class="btn btn-sm btn-info">
+						<i class="fa fa-search"></i>Details</button>
+					<button class="btn btn-sm btn-warning">
+						<i class="fa fa-edit"></i>Edit</button>
+					<button class="btn btn-sm btn-danger">
+						<i class="fa fa-remove"></i>Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button class="btn btn-md btn-outline-primary lp_btn_add">
+		<i class="fa fa-user"></i>+ Aggiungi</button>

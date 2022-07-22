@@ -1,0 +1,41 @@
+<div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll">
+	<form class="d-flex tm-search-form">
+		<input class="form-control tm-search-input" type="search"  placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-success tm-search-btn" type="submit">
+			<em class="fas fa-search"></em>
+		</button>
+	</form>
+	
+</div>
+<div class="container">
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Titolo</th>
+				<th>Posseduto</th>
+				<th>Console</th>
+				<th>Serie</th>
+				<th>Action</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let videogame of videogame">
+				<td><span>{{videogame.titolo}}</span></td>
+				<td class="td_centered"><span>{{videogame.posseduto ? 'Si' : 'No'}}</span></td>
+				<td class="td_centered"><span>{{videogame.console.nome}}</span></td>
+				<td class="td_centered"><span>{{videogame.serie.nome}}</span></td>
+				<td class="td_centered">
+					<button class="btn btn-sm btn-info">
+						<i class="fa fa-search"></i>Details</button>
+					<button class="btn btn-sm btn-warning">
+						<i class="fa fa-edit"></i>Edit</button>
+					<button class="btn btn-sm btn-danger">
+						<i class="fa fa-remove"></i>Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button class="btn btn-md btn-outline-primary lp_btn_add">
+		<i class="fa fa-user"></i>+ Aggiungi</button>
