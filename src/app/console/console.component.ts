@@ -1,11 +1,12 @@
 import { Component, OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Produttore } from '../produttore/produttore.component';
 
 export class Console {
 	constructor(
 		public id: number,
 		public nome: string,
-		public produttore: string, //todo
+		public produttore: Produttore, //todo
 		public anno: string
 	) {
 	}
