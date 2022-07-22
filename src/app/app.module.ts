@@ -10,6 +10,10 @@ import { FriendComponent } from './friend/friend.component';
 import { VideogameComponent } from './videogame/videogame.component';
 import { ConsoleComponent } from './console/console.component';
 import { ProduttoreComponent } from './produttore/produttore.component';
+import { VideogameDetailComponent } from './videogame-detail/videogame-detail.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
 
 
 @NgModule({
@@ -19,14 +23,17 @@ import { ProduttoreComponent } from './produttore/produttore.component';
     FriendComponent,
     VideogameComponent,
     ConsoleComponent,
-    ProduttoreComponent
+    ProduttoreComponent,
+    VideogameDetailComponent,
+    LoginComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    NgbModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
