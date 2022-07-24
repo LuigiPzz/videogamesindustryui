@@ -1,7 +1,7 @@
 <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll">
 
-		<input class="form-control tm-search-input" type="search"  placeholder="Search" aria-label="videogameTitle" [(ngModel)] ="videogameTitle" >
-		<button class="btn btn-outline-success tm-search-btn" type="submit" (click) = searchVideogame()>
+		<input class="form-control tm-search-input" type="search"  placeholder="Search" aria-label="videogameTitle" [(ngModel)] ="videogameTitle" (change) = searchVideogame()>
+		<button class="btn btn-outline-success tm-search-btn" type="submit" >
 			<em class="fas fa-search"></em>
 		</button>
 
@@ -22,7 +22,7 @@
 		<tbody>
 			<tr *ngFor="let videogame of videogame">
 				<td><span>{{videogame.titolo}}</span></td>
-				<td class="td_centered"><span>{{videogame.posseduto ? 'Si' : 'No'}}</span></td>
+				<td class="td_centered"><span><b>{{videogame.posseduto ? '&#128504;' : '&#128937;'}}</b></span></td>
 				<td class="td_centered"><span>{{videogame.console.nome}}</span></td>
 				<td class="td_centered"><span>{{videogame.serie.nome}}</span></td>
 				<td class="td_centered">

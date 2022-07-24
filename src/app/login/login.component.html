@@ -1,13 +1,29 @@
-<div>
-<label for="userId">User Id:</label>
-<input type="text" id="userId" placeholder="Nome Utente" [(ngModel)] = userId>
 
-<label for="password">Password:</label>
-<input type="password" id="password" placeholder="Password" [(ngModel)] = password>
-
-<button (click) = gestAuth()>Connetti</button>
-</div>
 <p>il tuo username è {{userId}} e la tua password è {{password}}</p>
 <div *ngIf="!autenticato">
 {{errMsg}}
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-sm-6 col-md-4 col-md-offset-4">
+          <h1 class="text-center lp_login_title" >Sign in</h1>
+          <div class="account-wall">
+              <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                  alt="">
+              <div class="form-signin">
+                <input type="text" class="lp_insert_box_form" id="userId" placeholder="Nome Utente" [(ngModel)] = userId required autofocus>
+                <input type="password" class="lp_insert_box_form" id="password" placeholder="Password" [(ngModel)] = password required>
+              <button class="lp_sign_in" (click) = gestAuth()>
+                  Sign in</button>
+              <label class="lp_checkbox">
+                  <input type="checkbox" value="remember-me">
+                  Remember me
+              </label>
+              <a href="#" class="lp_help">Need help? </a><span></span>
+            </div>
+          </div>
+          <a href="#" class="lp_new_account">Create an account </a>
+      </div>
+  </div>
 </div>
