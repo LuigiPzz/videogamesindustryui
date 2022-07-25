@@ -1,0 +1,14 @@
+i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.dropdown-menu{
+  top: 60px;
+ left:-100px
+
+}
+
+.dropdown-item{
+  height: 100%;
+}

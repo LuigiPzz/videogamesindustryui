@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,12 +11,12 @@ import { ConsoleComponent } from './console/console.component';
 import { ProduttoreComponent } from './produttore/produttore.component';
 import { VideogameDetailComponent } from './videogame-detail/videogame-detail.component';
 import { LoginComponent } from './login/login.component';
-import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from './core/header/header.component';
-
-
+import { CoreModule } from './core/core.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -29,15 +28,15 @@ import { HeaderComponent } from './core/header/header.component';
     ProduttoreComponent,
     VideogameDetailComponent,
     LoginComponent,
-    ErrorComponent,
-    HeaderComponent
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CoreModule, FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
