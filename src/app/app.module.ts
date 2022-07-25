@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './core/header/header.component';
+
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { RouterModule } from '@angular/router';
     ProduttoreComponent,
     VideogameDetailComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
