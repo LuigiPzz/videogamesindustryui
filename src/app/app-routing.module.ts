@@ -8,6 +8,7 @@ import { ProduttoreComponent } from './produttore/produttore.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ErrorComponent } from './error/error.component';
+import { RouteGuardServiceService } from 'src/services/route-guard-service.service';
 
 
 const routes: Routes = [
@@ -16,9 +17,9 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
 	{path: 'friend', component: FriendComponent},
-	{path: 'videogame', component: VideogameComponent},
-	{path: 'console', component: ConsoleComponent},
-	{path: 'produttore', component: ProduttoreComponent},
+	{path: 'videogame', component: VideogameComponent, canActivate:[RouteGuardServiceService]},
+	{path: 'console', component: ConsoleComponent, canActivate:[RouteGuardServiceService]},
+	{path: 'produttore', component: ProduttoreComponent, canActivate:[RouteGuardServiceService]},
   {path: '**', component: ErrorComponent}
 ];
 
