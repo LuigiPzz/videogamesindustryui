@@ -12,3 +12,7 @@ i {
 .dropdown-item{
   height: 100%;
 }
+
+.lp_nome_utente{
+  pointer-events: none;
+}

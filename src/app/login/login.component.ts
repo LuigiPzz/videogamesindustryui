@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthappService } from 'src/services/authapp.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +14,10 @@ export class LoginComponent implements OnInit {
   autenticato: boolean = true;
   errMsg: string = "Credenziali Errate!";
 
-  constructor(private route: Router) { }
+  constructor(
+      private route: Router,
+      private BasicAuth: AuthappService
+    ) { }
 
   ngOnInit(): void {
   }
@@ -21,12 +25,14 @@ export class LoginComponent implements OnInit {
   gestAuth = () : void => {
     console.log(this.userId)
 
-    if(this.userId === "Pippo" && this.password === "123"){
+    if(this.BasicAuth.autentica(this.userId, this.password)){
       this.route.navigate(['home']);
       this.autenticato = true;
     } else {
       this.autenticato = false;
     }
+
+
   }
 
 }

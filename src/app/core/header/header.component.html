@@ -30,11 +30,13 @@
           <i class="fa fa-bars"></i>
         </button>
         <ul class="dropdown-menu" >
-          <li><a class="dropdown-item" routerLink="/login">Login</a></li>
-          <li><a class="dropdown-item" href="#">Registrati</a></li>
-          <li><a class="dropdown-item" href="#">Disabilita</a></li>
+          <li><output class="dropdown-item lp_nome_utente" *ngIf="BasicAuth.isLogged()">Ciao {{BasicAuth.loggedUser()}}</output></li>
+          <li><a class="dropdown-item" *ngIf="!BasicAuth.isLogged()" routerLink="/login">Login</a></li>
+          <li><a class="dropdown-item" *ngIf="!BasicAuth.isLogged()" href="#">Registrati</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Logout</a></li>
+          <li><a class="dropdown-item" *ngIf="BasicAuth.isLogged()" href="#">Logout</a></li>
+          <li><a class="dropdown-item disabled" *ngIf="!BasicAuth.isLogged()" href="#">Logout</a></li>
+
         </ul>
       </div>
 
