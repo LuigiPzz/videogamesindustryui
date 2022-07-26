@@ -18,6 +18,9 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { LogoutComponent } from './logout/logout.component';
 import { VideogameCardComponent } from './components/videogame-card/videogame-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -30,7 +33,7 @@ import { VideogameCardComponent } from './components/videogame-card/videogame-ca
     LoginComponent,
     ErrorComponent,
     LogoutComponent,
-    VideogameCardComponent
+    VideogameCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +41,13 @@ import { VideogameCardComponent } from './components/videogame-card/videogame-ca
     NgbModule,
     HttpClientModule,
     FormsModule,
-    CoreModule, FontAwesomeModule
+    CoreModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
