@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  userId: string = "UtenteTest";
-  password: string = "";
+  userId: string = "Pippo";
+  password: string = "123";
   autenticato: boolean = true;
   errMsg: string = "Credenziali Errate!";
 

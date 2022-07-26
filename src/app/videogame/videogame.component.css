@@ -1,13 +1,13 @@
  @import "../../assets/css/bootstrap.min.css";
   @import "../../assets/fontawesome/css/all.min.css";
    @import "../../assets/css/templatemo-style.css";
-   
+
 .tm-hero{
     background-color: #f4f4f4;
     }
 .tm-search-form{
 	margin:0px;
-	padding: 0px;	
+	padding: 0px;
     transition-duration: 0.4s;
 }
 
@@ -54,4 +54,7 @@ table .btn{
 thead{ background: #009999; color: white;text-align: center;  }
 span{ height: 100%; width: 100%}
 td{vertical-align: middle; border: 0px;}
-th{border: 0px;}
+th{border:0px;}
+
+
+

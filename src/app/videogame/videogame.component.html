@@ -12,9 +12,9 @@
 		<thead>
 			<tr>
 				<th>Titolo</th>
-				<th>Posseduto</th>
+				<th class="lp_th_posseduto">Posseduto</th>
 				<th>Console</th>
-				<th>Serie</th>
+				<th class="lp_serie">Serie</th>
 				<th>Action</th>
 
 			</tr>
@@ -22,9 +22,9 @@
 		<tbody>
 			<tr *ngFor="let videogame of videogame">
 				<td><span>{{videogame.titolo}}</span></td>
-				<td class="td_centered"><span><b>{{videogame.posseduto ? '&#128504;' : '&#128937;'}}</b></span></td>
+				<td class="td_centered lp_th_posseduto"><span><b>{{videogame.posseduto ? '&#128504;' : '&#128937;'}}</b></span></td>
 				<td class="td_centered"><span>{{videogame.console.nome}}</span></td>
-				<td class="td_centered"><span>{{videogame.serie.nome}}</span></td>
+				<td class="td_centered lp_serie"><span>{{videogame.serie.nome}}</span></td>
 				<td class="td_centered">
 					<button class="btn btn-sm btn-info">
 						<i class="fa fa-search"></i>Details</button>
