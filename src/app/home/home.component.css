@@ -10,6 +10,9 @@
   /*height: 200px; dimensione tab videogame*/
   height: 700px;
   border-bottom: 2px dashed #000;
+margin-top: 60px   ;
+
+
 }
 
 .row > div {

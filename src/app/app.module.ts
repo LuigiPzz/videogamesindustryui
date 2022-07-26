@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { FriendComponent } from './friend/friend.component';
 import { VideogameComponent } from './videogame/videogame.component';
 import { ConsoleComponent } from './console/console.component';
 import { ProduttoreComponent } from './produttore/produttore.component';
@@ -23,7 +22,6 @@ import { LogoutComponent } from './logout/logout.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    FriendComponent,
     VideogameComponent,
     ConsoleComponent,
     ProduttoreComponent,
