@@ -17,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { LogoutComponent } from './logout/logout.component';
+import { VideogameCardComponent } from './components/videogame-card/videogame-card.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LogoutComponent } from './logout/logout.component';
     VideogameDetailComponent,
     LoginComponent,
     ErrorComponent,
-    LogoutComponent
+    LogoutComponent,
+    VideogameCardComponent
   ],
   imports: [
     BrowserModule,
