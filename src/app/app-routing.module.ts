@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ErrorComponent } from './error/error.component';
 import { RouteGuardServiceService } from 'src/services/route-guard-service.service';
+import { VideogameCardComponent } from './components/videogame-card/videogame-card.component';
+import { VideogameDetailComponent } from './pages/videogame-detail/videogame-detail.component';
 
 
 const routes: Routes = [
@@ -16,8 +18,10 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
 	{path: 'videogame', component: VideogameComponent, canActivate:[RouteGuardServiceService]},
+	{path: 'videogame/details', component: VideogameDetailComponent, canActivate:[RouteGuardServiceService]},
 	{path: 'console', component: ConsoleComponent, canActivate:[RouteGuardServiceService]},
 	{path: 'produttore', component: ProduttoreComponent, canActivate:[RouteGuardServiceService]},
+	{path: 'videogame/card', component: VideogameCardComponent, canActivate:[RouteGuardServiceService]},
   {path: '**', component: ErrorComponent}
 ];
 
