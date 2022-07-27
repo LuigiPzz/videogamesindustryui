@@ -5,14 +5,14 @@
   <div class="lp_table">
     <button class="lp_edit_button" mat-fab color="accent"><mat-icon>
       edit-outlined</mat-icon></button>
-    <h1>Gears Tactics</h1>
+    <h1>{{videogameInDetails.titolo}}</h1>
 
     <table>
 
 
       <tr>
         <th>Posseduto:</th>
-        <td>Si
+        <td>{{videogameInDetails.posseduto ? 'Si' : 'No'}}
         </td>
       </tr>
       <tr>
@@ -22,15 +22,14 @@
       </tr>
       <tr>
         <th>Console:</th>
-        <td>Xbox Series X
-        </td>
+        <td>{{videogameInDetails.console.nome}}</td>
       </tr>
       <tr>
         <th>Data Uscita:</th>
         <td>Settembre 2022</td>
       </tr>
     </table>
-    <h3 class="lp_serie"><b>Serie: </b>Gear of War</h3>
+    <h3 class="lp_serie"><b>Serie: </b>{{videogameInDetails.serie|json}}</h3>
     <div class="lp_img_preview_div">
     <img class="lp_img_preview"
       src="..\..\assets\img\Videogame\xbox series x\microsoft-xbox series x-[gears tactics]FRONT.jpg">

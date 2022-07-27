@@ -2,7 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Produttore } from '../produttore/produttore.component';
 
-export class Console {
+export class GamingConsole {
 	constructor(
 		public id: number,
 		public nome: string,
@@ -14,11 +14,11 @@ export class Console {
 
 @Component({
 	selector: 'app-console',
-	templateUrl: './console.component.html',
-	styleUrls: ['./console.component.css']
+	templateUrl: './gamingConsole.component.html',
+	styleUrls: ['./gamingConsole.component.css']
 })
 
-export class ConsoleComponent implements OnInit {
+export class GamingConsoleComponent implements OnInit {
 
 	console: any[] = [];
 

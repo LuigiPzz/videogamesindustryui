@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { GamingConsole } from '../gamingConsole/gamingConsole.component';
 
 export class Videogame {
 	constructor(
 		public id: number,
 		public titolo: string,
 		public posseduto: boolean,
-		public console: Console,
+		public console: GamingConsole,
 		public serie: string
 	) {
 	}
@@ -24,6 +25,8 @@ export class VideogameComponent implements OnInit {
 
 	videogame: any[] = [];
   videogameTitle: string = "";
+
+
 
 
 	constructor(private httpClient: HttpClient,
@@ -47,8 +50,10 @@ export class VideogameComponent implements OnInit {
 				this.videogame = response;
 			}
 		);
-
-
 	}
+
+  goToDetails(videogameid: number){
+    this.route.navigate(['videogame/details',videogameid]);
+  }
 
 }

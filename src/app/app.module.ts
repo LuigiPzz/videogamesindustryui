@@ -6,7 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { VideogameComponent } from './pages/videogame/videogame.component';
-import { ConsoleComponent } from './pages/console/console.component';
+import { GamingConsoleComponent } from './pages/gamingConsole/gamingConsole.component';
 import { ProduttoreComponent } from './pages/produttore/produttore.component';
 import { VideogameDetailComponent } from './pages/videogame-detail/videogame-detail.component';
 import { LoginComponent } from './login/login.component';
@@ -27,7 +27,7 @@ import {MatIconModule} from '@angular/material/icon'
     AppComponent,
     HomeComponent,
     VideogameComponent,
-    ConsoleComponent,
+    GamingConsoleComponent,
     ProduttoreComponent,
     VideogameDetailComponent,
     LoginComponent,

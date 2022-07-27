@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './pages/home/home.component';
 import { VideogameComponent } from './pages/videogame/videogame.component';
-import { ConsoleComponent } from './pages/console/console.component';
+import { GamingConsoleComponent } from './pages/gamingConsole/gamingConsole.component';
 import { ProduttoreComponent } from './pages/produttore/produttore.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -18,8 +18,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
 	{path: 'videogame', component: VideogameComponent, canActivate:[RouteGuardServiceService]},
-	{path: 'videogame/details', component: VideogameDetailComponent, canActivate:[RouteGuardServiceService]},
-	{path: 'console', component: ConsoleComponent, canActivate:[RouteGuardServiceService]},
+	{path: 'videogame/details/:videogameid', component: VideogameDetailComponent, canActivate:[RouteGuardServiceService]},
+	{path: 'console', component: GamingConsoleComponent, canActivate:[RouteGuardServiceService]},
 	{path: 'produttore', component: ProduttoreComponent, canActivate:[RouteGuardServiceService]},
 	{path: 'videogame/card', component: VideogameCardComponent, canActivate:[RouteGuardServiceService]},
   {path: '**', component: ErrorComponent}
