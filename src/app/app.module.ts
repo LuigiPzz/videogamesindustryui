@@ -20,7 +20,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { VideogameCardComponent } from './components/videogame-card/videogame-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import { SerieComponent } from './pages/serie/serie.component'
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {MatIconModule} from '@angular/material/icon'
     ErrorComponent,
     LogoutComponent,
     VideogameCardComponent,
+    SerieComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { GamingConsole } from '../gamingConsole/gamingConsole.component';
+import { Serie } from '../serie/serie.component';
 
 export class Videogame {
 	constructor(
@@ -9,7 +10,7 @@ export class Videogame {
 		public titolo: string,
 		public posseduto: boolean,
 		public console: GamingConsole,
-		public serie: string
+		public serie: Serie
 	) {
 	}
 }
