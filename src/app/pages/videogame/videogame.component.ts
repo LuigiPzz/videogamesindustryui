@@ -45,7 +45,7 @@ export class VideogameComponent implements OnInit {
 	searchVideogame() {
     console.log(this.videogameTitle)
 
-		this.httpClient.get<any>('http://localhost:8082/api/search?query='+this.videogameTitle).subscribe(
+		this.httpClient.get<any>('http://localhost:9001/api/videogames/findByTitolo?titolo='+this.videogameTitle).subscribe(
 			response => {
 				console.log(response);
 				this.videogame = response;

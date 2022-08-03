@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
   }
 
   lastVideogamesAdded(){
-    this.httpClient.get<Videogame>('http://localhost:9001/api/lastVideogamesAdded?limit='+this.maxNumberResult).subscribe(
+    this.httpClient.get<Videogame>('http://localhost:9001/api/videogames/lastVideogamesAdded?limit='+this.maxNumberResult).subscribe(
 			response => {
 
         this.lastVideogamesAddedlist = response
